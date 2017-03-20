@@ -2,4 +2,5 @@ import sys
 
 print("hello from python")
 
-print("\n").join(sys.argv)
+for arg in sys.argv:
+    print(arg)
