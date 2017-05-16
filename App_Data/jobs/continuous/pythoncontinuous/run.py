@@ -6,6 +6,13 @@ msg = "Using Python '{0}'".format(platform.python_version())
 print(msg)  
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname( __file__ ), 'env')))
+
+print(sys.path)
+print(sys.path.append(os.path.abspath(os.path.join(os.path.dirname( __file__ ), 'env'))))
+
+msg = "Using Python '{0}'".format(platform.python_version())  
+print(msg) 
+
 from azure.storage.queue import QueueService
 
 print(os.environ['storagekey'])
