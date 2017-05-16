@@ -4,6 +4,7 @@ import platform
 message = "Using Python '{0}'".format(platform.python_version())  
 print(message)  
 
+from azure.storage import QueueService
 from azure.storage.queue import QueueService
 
 print(os.environ['storagekey'])
